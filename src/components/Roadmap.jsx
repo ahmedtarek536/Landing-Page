@@ -10,8 +10,8 @@ function Roadmap() {
     <Box className="mt-48">
       <TitleSection firstTitle="NFTHub's" secondTitle="Roadmap" />
       <Box className="grid grid-template-300 gap-10 mt-16">
-        count += 2;
         {data.map((plan, i) => {
+           count += 2;
           return <RoadmapCard key={i} data={plan} delay={count * 100} />;
         })}
       </Box>
