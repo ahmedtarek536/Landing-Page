@@ -5,11 +5,12 @@ import roadmapPlans from "../data/RoadmapData";
 
 function Roadmap() {
   const data = roadmapPlans;
-  const count = 1;
+  let count = 1;
   return (
     <Box className="mt-48">
       <TitleSection firstTitle="NFTHub's" secondTitle="Roadmap" />
       <Box className="grid grid-template-300 gap-10 mt-16">
+        count += 2;
         {data.map((plan, i) => {
           return <RoadmapCard key={i} data={plan} delay={count * 100} />;
         })}
