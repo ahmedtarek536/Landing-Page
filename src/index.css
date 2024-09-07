@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-linear {
+  background-image: linear-gradient(to top right, #2600fc, #ff00ea);
+}
+
+.text-linear {
+  background: linear-gradient(to top right, #2600fc, #ff00ea);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.collection::-webkit-scrollbar {
+  display: none;
+}
+
+.grid-template-250 {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.grid-template-300 {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.grid-template-350 {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.start-section {
+  background-image: url("./Images/div.cta-bg.png");
+  background-size: contain;
+}
