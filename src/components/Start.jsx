@@ -5,7 +5,7 @@ import { Box, Typography } from "@mui/material";
 
 function Start() {
   return (
-    <Box className={` mt-60 text-center start-section px-3 py-20 `}>
+    <Box className={`  text-center start-section px-3 py-20 `}>
       <TitleSection firstTitle={"Let's Start"} secondTitle={"work"} />
       <br />
 

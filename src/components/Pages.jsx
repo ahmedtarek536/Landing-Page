@@ -5,9 +5,9 @@ function Pages() {
     <Box className="hidden md:flex items-center gap-10  justify-center">
       <a href="#">Home</a>
       <a href="#">Collection</a>
-      <a href="#">Chose</a>
-      <a href="#">About</a>
-      <a href="#">Roadmap</a>
+      <a href="#choose">Choose</a>
+      <a href="#about">About</a>
+      <a href="#plans">Roadmap</a>
     </Box>
   );
 }

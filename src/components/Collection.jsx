@@ -1,11 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import CollectionCard from "./CollectionCard";
 import Button from "./Button";
 import TitleSection from "./TitleSection";
+import CollectionData from "../data/CollectionData";
 
 function Collection() {
   return (
-    <Box className="mt-28">
+    <Box className="">
       <TitleSection firstTitle={"NFTHub's"} secondTitle={"Collection"} />
       <Box className="w-full overflow-scroll collection mt-16">
         <Box
@@ -13,12 +14,9 @@ function Collection() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
-          <CollectionCard />
+          {CollectionData.map((collection, i) => (
+            <CollectionCard key={i} collection={collection} />
+          ))}
         </Box>
       </Box>
       <Box className="text-center mt-20">

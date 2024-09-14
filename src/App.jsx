@@ -1,7 +1,7 @@
 import Choose from "./components/Choose";
 import Collection from "./components/Collection";
 import Home from "./components/Home";
-import { Container, Divider } from "@mui/material";
+import { Container } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -15,6 +15,8 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Numbers from "./components/Numbers";
 import Footer from "./components/Footer";
+import Line from "./components/Divider";
+import CustomSolution from "./components/CustomSolution";
 
 const darkTheme = createTheme({
   palette: {
@@ -26,25 +28,36 @@ const darkTheme = createTheme({
 });
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // You can customize the animation duration here
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // You can customize the animation duration here
+  //   });
+  // }, []);
   return (
     <div>
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Container>
           <Home />
-          <Collection />
-          <Choose />
-          <Numbers />
+          <Line />
+          <CustomSolution />
+          <Line />
           <Services />
+          <Line />
+          <Collection />
+          <Line />
+          <Choose />
+          <Line />
+          <Numbers />
+          <Line />
           <Drop />
+          <Line />
           <Roadmap />
+          <Line />
           <Artist />
+          <Line />
           <Questions />
+          <Line />
           <Start />
           <Footer />
         </Container>

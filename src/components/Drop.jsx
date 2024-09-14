@@ -5,7 +5,7 @@ import Button from "./Button";
 function Drop() {
   return (
     <Box
-      className="w-60% border border-secondary rounded-3xl mt-32 text-center px-8 py-12"
+      className="w-60% border border-secondary rounded-3xl  text-center px-8 py-12"
       data-aos="fade-up"
     >
       <TitleSection firstTitle={"Never"} secondTitle={"miss a drop!"} />

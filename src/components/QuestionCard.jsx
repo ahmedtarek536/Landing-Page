@@ -15,9 +15,15 @@ function QuestionCard({ question }) {
           {question.question}
         </Typography>
         {isOpen ? (
-          <KeyboardArrowUp onClick={() => setIsOpen(false)} />
+          <KeyboardArrowUp
+            sx={{ cursor: "pointer" }}
+            onClick={() => setIsOpen(false)}
+          />
         ) : (
-          <KeyboardArrowDown onClick={() => setIsOpen(true)} />
+          <KeyboardArrowDown
+            sx={{ cursor: "pointer" }}
+            onClick={() => setIsOpen(true)}
+          />
         )}
       </Stack>
       {isOpen && (

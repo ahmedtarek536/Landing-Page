@@ -5,7 +5,7 @@ import ourServices from "../data/ServicesData";
 
 function Services() {
   return (
-    <Box className="mt-44">
+    <Box className="mt-44  ">
       <TitleSection firstTitle={"Our"} secondTitle={"Services"} />
       <Box>
         {ourServices.map((service, i) => (

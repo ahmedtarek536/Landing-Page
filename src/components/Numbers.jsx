@@ -4,7 +4,7 @@ import companyStats from "../data/NumberData";
 function Numbers() {
   const len = companyStats.length - 1;
   return (
-    <Box className="grid grid-template-250 gap-8 mt-60">
+    <Box className="grid grid-template-250 gap-8 ">
       {companyStats.map((e, i) => (
         <Number data={e} key={i} style={i != len ? "" : "md:border-none"} />
       ))}

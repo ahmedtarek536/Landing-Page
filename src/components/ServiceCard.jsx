@@ -12,9 +12,11 @@ function ServiceCard({ reverse, data }) {
       />
       <Box data-aos={`${!reverse ? "fade-left" : "fade-right"}`}>
         <p className=" text-linear font-bold ">{data.num}</p>
-        <h4 className="text-5xl font-bold mt-3 font-mono">{data.title}</h4>
+        <h4 className="text-4xl sm:text-5xl font-bold mt-3 font-mono">
+          {data.title}
+        </h4>
         <p className="text-primary mt-8 mb-2 text-lg ">{data.description}</p>
-        <Link sx={{ color: "" }}>Learn More</Link>
+        <Link sx={{ color: "", cursor: "pointer" }}>Learn More</Link>
       </Box>
     </Box>
   );

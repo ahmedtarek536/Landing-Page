@@ -7,10 +7,11 @@ function Roadmap() {
   const data = roadmapPlans;
   let count = 1;
   return (
-    <Box className="mt-48">
+    <Box className="">
       <TitleSection firstTitle="NFTHub's" secondTitle="Roadmap" />
       <Box className="grid grid-template-300 gap-10 mt-16">
         {data.map((plan, i) => {
+          count += 2;
            count += 2;
           return <RoadmapCard key={i} data={plan} delay={count * 100} />;
         })}

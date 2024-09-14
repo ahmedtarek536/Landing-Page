@@ -7,7 +7,7 @@ function Choose() {
   const data = whyChooseUs;
   let count = 1;
   return (
-    <Box className="mt-60">
+    <Box className="">
       <TitleSection firstTitle={"Why"} secondTitle={"Choose US?"} />
       <Box className="grid grid-template-250 gap-8 mt-20">
         {data.map((e, i) => {

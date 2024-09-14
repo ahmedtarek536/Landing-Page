@@ -1,4 +1,10 @@
-import { Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import {
+  Instagram,
+  LinkedIn,
+  Mail,
+  MailOutline,
+  Twitter,
+} from "@mui/icons-material";
 import { Box, Stack, Typography } from "@mui/material";
 
 function Footer() {
@@ -21,7 +27,7 @@ function Footer() {
           >
             <Twitter sx={{ fontSize: "20px" }} />
             <LinkedIn sx={{ fontSize: "20px" }} />
-            <Instagram sx={{ fontSize: "20px" }} />
+            <Mail sx={{ fontSize: "20px" }} />
           </Stack>
         </Box>
         <Box></Box>

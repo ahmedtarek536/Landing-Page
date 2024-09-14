@@ -1,5 +1,5 @@
-import { Box, Stack, Typography } from "@mui/material";
-
+import { Box, Divider, Stack, Typography } from "@mui/material";
+import icon from "../Images/Check_Icon.png";
 function RoadmapCard({ delay, data }) {
   return (
     <Box
@@ -33,8 +33,8 @@ function RoadmapCard({ delay, data }) {
       </Typography>
       <br />
       <br />
-      <hr />
-      <Box className="px-3 mt-3">
+      <Divider />
+      <Box className="mt-6">
         {data.features.map((feature, i) => (
           <Feature key={i} feature={feature} />
         ))}
@@ -45,12 +45,9 @@ function RoadmapCard({ delay, data }) {
 
 function Feature({ feature }) {
   return (
-    <Box>
-      <Typography
-        variant="p"
-        className="font-semibold  block"
-        sx={{ marginTop: "8px" }}
-      >
+    <Box className="flex gap-2 items-start justify-start mt-4">
+      <img src={icon} alt="" />
+      <Typography variant="p" className="font-semibold  block text-sm">
         {" "}
         {feature}
       </Typography>

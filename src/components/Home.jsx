@@ -9,15 +9,11 @@ function Home() {
   return (
     <Box>
       <Header />
-      <Box className="flex flex-col justify-between items-center gap-16 md:flex-row mt-20 md:mt-10">
+      <Box className="flex flex-col justify-between items-center gap-16 md:flex-row mt-20 md:mt-10 z-[-1] relative overflow-hidden">
         <Box className="">
-          <Typography
-            data-aos="fade-up"
-            variant="h2"
-            sx={{ fontWeight: "bold", marginBottom: "10px" }}
-          >
+          <h2 className="mb-6 font-bold text-4xl sm:text-5xl lg:text-6xl ">
             High Quailty Software Products
-          </Typography>
+          </h2>
           <Typography
             variant="p"
             className="text-primary block"

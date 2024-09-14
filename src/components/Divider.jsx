@@ -1,11 +1,12 @@
 import { Box } from "@mui/material";
-import image from "../Images/Vector.png";
-function Divider() {
+import image from "../Images/section.png.png";
+
+function Line() {
   return (
-    <Box>
-      <img src={image} alt="divider-line" className="w-fit" />
+    <Box className="flex items-center justify-center mt-40 mb-40">
+      <img src={image} alt="" />
     </Box>
   );
 }
 
-export default Divider;
+export default Line;
